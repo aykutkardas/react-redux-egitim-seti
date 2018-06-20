@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Users</h1>
-        { isLoading ? 'Loading...' : '' }
+        { isLoading && 'Loading...'}
         {
           !isLoading ? this.state.users.map(user =>
 						<div key={ user.id } className={"userList"}>
